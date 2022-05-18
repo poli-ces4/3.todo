@@ -51,7 +51,34 @@
   cursor: pointer;
 }
 
-.list {
+.button-complete,
+.button-edit,
+.button-delete {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
+.button-complete {
+  color: #ff6c6c;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.button-edit {
+  color: #e2d029;
+  margin-right: 15px;
+}
+
+.button-delete {
+  color: lightblue;
+  margin-right: 15px;
+}
+
+.list-item {
   width: 220px;
   background-color: #12343b;
   border: none;
@@ -61,9 +88,15 @@
   margin-right: 15px;
 }
 
-.list-item {
+.list {
   display: flex;
   margin: 20px 0;
   padding: 10px;
   min-height: 30px;
+}
+
+.complete {
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: #ff6c6c;
 }
